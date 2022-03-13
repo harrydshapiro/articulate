@@ -73,6 +73,7 @@ article iframe {
   top: -35px;
   font-size: 65px;
   left: 40px;
+  background: white;
 }
 
 @media (max-width: 600px) {
