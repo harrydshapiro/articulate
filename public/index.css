@@ -39,9 +39,9 @@ body {
   width: 100%
 }
 
-article {
+article  {
   width: 50vw;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -54,10 +54,15 @@ article table {
   text-align: left;
 }
 
+article table col {
+  width: 33.3%;
+}
+
 article table td, article table th {
 	padding: .5rem;
   border: 1px solid black;
   vertical-align: text-top;
+  max-width: 40%;
 }
 
 article iframe {
@@ -67,7 +72,7 @@ article iframe {
 .header {
   position: absolute;
   top: -35px;
-  font-size: 65px;
+  font-size: 50px;
   left: 40px;
   background: white;
 }
@@ -83,9 +88,8 @@ article iframe {
 
   .header {
     position: sticky;
-    font-size: 45px;
-    left: 0;
-    top: 0;
-    margin: 0 0 70px;
+    font-size: 35px;
+    margin: 0 4px 10px 0;
+    text-align: right;
   }
 }
