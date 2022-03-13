@@ -14,7 +14,8 @@
 }
 
 html {
-  font-family: "Neue Montreal"
+  font-family: "Neue Montreal";
+  -webkit-font-smoothing: antialiased;
 }
 
 .font-shatter {
