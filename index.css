@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("neue_montreal.woff");
+}
+
+@font-face {
+  font-family: "Trickster";
+  src: url("Trickster-Regular.woff");
+}
+
+html {
+  font-family: "Neue Montreal"
+}
+
+h3 {
+  /* font-family: "Trickster"; */
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.width-100p {
+  width: 100%
+}
+
+article {
+  max-width: 500px;
+  margin: auto;
+}
+
+article .body-text {
+  margin-bottom: 0;
+}
+
+article table { 
+  border-collapse: collapse;
+  text-align: left;
+}
+
+article table th {
+  padding: .5rem;
+  border: 1px solid black;
+}
+
+article table td {
+	padding: .5rem;
+  border: 1px solid black;
+}
