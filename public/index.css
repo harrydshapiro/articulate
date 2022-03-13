@@ -76,7 +76,7 @@ article iframe {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: -35px;
   font-size: 50px;
   left: 40px;
