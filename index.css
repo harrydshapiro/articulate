@@ -8,8 +8,17 @@
   src: url("Trickster-Regular.woff");
 }
 
+@font-face {
+  font-family: "Shatter";
+  src: url("Shatter_Plain.ttf");
+}
+
 html {
   font-family: "Neue Montreal"
+}
+
+.font-shatter {
+  font-family: "Shatter";
 }
 
 h3 {
@@ -31,6 +40,7 @@ body {
 }
 
 article {
+  width: 50vw;
   max-width: 500px;
   margin: auto;
 }
@@ -58,8 +68,27 @@ article iframe {
   margin-top: 28px;
 }
 
+.header {
+  position: absolute;
+  top: -35px;
+  font-size: 65px;
+  left: 40px;
+}
+
 @media (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+  
   body {
     padding-top: 5px;
+  }
+
+  .header {
+    position: sticky;
+    font-size: 45px;
+    left: 0;
+    top: 0;
+    margin: 0 0 70px;
   }
 }
