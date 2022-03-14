@@ -32,10 +32,6 @@ h3 {
   font-weight: 100;
 }
 
-body {
-  padding-top: 100px;
-}
-
 .text-underline {
   text-decoration: underline;
 }
@@ -47,7 +43,7 @@ body {
 article  {
   width: 50vw;
   max-width: 600px;
-  margin: auto;
+  margin: 100px auto auto;
 }
 
 article .body-text {
@@ -70,6 +66,12 @@ article table td, article table th {
   max-width: 40%;
   font-weight: 100;
 }
+
+article table ol {
+  padding-inline-start: 20px;
+  margin-top: 0;
+}
+
 
 article iframe {
   margin-top: 28px;
