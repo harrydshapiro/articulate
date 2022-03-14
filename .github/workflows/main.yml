@@ -21,3 +21,6 @@ jobs:
 
     - name: Deploy static site to root S3 bucket
       run: aws s3 sync ./public/ s3://articulate.gallery --delete
+
+    - name: Deploy static site to www S3 bucket
+      run: aws s3 sync ./public/ s3://www.articulate.gallery --delete
