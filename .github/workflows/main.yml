@@ -19,5 +19,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
-    - name: Deploy static site to S3 bucket
+    - name: Deploy static site to root S3 bucket
       run: aws s3 sync ./public/ s3://const.gallery --delete
+
+    - name: Deploy static site to www S3 bucket
+      run: aws s3 sync ./public/ s3://www.const.gallery --delete
