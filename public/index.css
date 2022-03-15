@@ -21,8 +21,9 @@ html {
   font-weight: 100;
 }
 
-.font-shatter {
-  font-family: "Shatter";
+#intro {
+  margin-top: 200px;
+  font-size: 1.25rem;
 }
 
 h3 {
@@ -99,5 +100,9 @@ article iframe {
     font-size: 35px;
     margin: 0 4px 10px 0;
     text-align: right;
+  }
+
+  #intro {
+    margin-top: 100px;
   }
 }
