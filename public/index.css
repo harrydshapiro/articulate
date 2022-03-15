@@ -121,5 +121,6 @@ article iframe {
   .header {
     left: 30.6px;
     font-size: 40.8px;
+    position: unset;
   }
 }
