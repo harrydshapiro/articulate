@@ -9,12 +9,18 @@
 }
 
 @font-face {
-  font-family: "Shatter";
-  src: url("Shatter_Plain.ttf");
+  font-family: "Century";
+  src: url("CenturyExpSH-Roman.otf");
+}
+
+@font-face {
+  font-family: "Century";
+  font-style: italic;
+  src: url("CenturyExpSH-Italic.otf");
 }
 
 html {
-  font-family: "Neue Montreal";
+  font-family: "Century";
   -webkit-font-smoothing: antialiased;
   text-rendering:optimizeLegibility;
   -webkit-font-feature-settings: "kern" 1;

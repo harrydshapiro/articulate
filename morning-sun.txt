@@ -1,0 +1,64 @@
+CONTENT:
+
+In the morning, the city splays its front legs out, arches its back, and suns itself. It wants you to scratch it behind its ears. Go take it for a walk.
+
+At all other times, the city is held taught with self-aware competitive anxiety, the natural byproduct of the collisions between its ambitious and overcultured residents. 
+
+Thank god they're all asleep. 
+
+Morning is the time for dumb smiles, parades of kindergarteners branching off their communal leash, and dogs that remind you that you actually love dogs - just not their owners. 
+
+This tone is all thanks to the sun - pure, radiant, innocent, and unfocused. The closer you get to the star itself, though, the harder that is to fathom. The sun is a firey pit pockmarked by black holes. It burps flames and reaks of sulfur. Difficult, detailed effort goes into creating natural, simple beauty. Does that cheapen the beauty or enrich it?
+
+Humanist fonts - <insert brief description here> - are the typographic morning sun. When consumed without consciousness, they appear to simply be the way letters should be, and always have been. But look at them with the aesthetic judgement reserved for walking through SoHo alone on a Saturday afternoon. Look how *hard* they're trying: how many serifs they're wearing, how many contrasting weights they have on.
+
+So with all this detail, all this formality, why do Humanist fonts feel natural?
+
+[One answer - we are acculturated to it. <explain>]
+
+[Another answer - they mirror human handwriting (to a certain extent). <explain>]
+
+Whether the cause is handwriting or ~~~society~~~, humanist fonts reflect *humans*. People are natural; cities are organic. Lie down on Bleeker, stretch out your arms, pop up your tush, and bask in the sun and stares. Don't worry why it feels good.
+
+________
+
+EXECUTION:
+
+find:
+    nice pad
+        good paper
+        lays flat
+        big enough to comfortably support showing two columns of 9.9cm width each
+    nice pen
+        looks good on pad
+        nice to grip
+        dark contrast with pad color
+
+write out text in columns
+
+scan text
+
+split each paragraph into its own image file
+
+create div for each block of handwriting or picture gallery
+
+make each handwriting div a flexbox, organize handwriting images
+    flexbox styling
+        flex-direction: row
+        flex-wrap: wrap
+        width: <full screen>
+        max-width: <space for two columns>
+
+    images styling 
+        mobile
+            width: 100%
+        desktop
+            width: 300px
+        margin: <space them comfortably apart>
+
+Insert pictures into gallery blocks
+    make it look good, dingus
+
+
+
+
