@@ -1,0 +1,16 @@
+#article-links {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#article-links .link-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
