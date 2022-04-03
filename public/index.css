@@ -108,6 +108,11 @@ article iframe {
   font-size: 90%;
 }
 
+.homepage-link {
+  color: black;
+  text-decoration: unset;
+}
+
 @media (max-width: 600px) {
   article {
     width: 100%;

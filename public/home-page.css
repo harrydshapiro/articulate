@@ -9,8 +9,38 @@
 #article-links .link-wrapper {
   display: flex;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+#article-links .link-wrapper img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  #intro {
+    margin-top: 30px;
+    text-align: right;
+    margin-bottom: 30px;
+    width: 90vw;
+  }
+
+  #article-links {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  #article-links .link-wrapper {
+    margin: unset;
+  }
+
+  #article-links .link-wrapper img {
+    width: 90vw;
+  }
 }
