@@ -9,12 +9,13 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #intro {
   margin: 0 0 30px auto;
   text-align: right;
+  font-size: 1.25rem;
 }
 
 #article-links {
@@ -45,6 +46,10 @@
 @media (max-width: 750px) {
   #body-content {
     max-width: fit-content;
+  }
+
+  #header {
+    margin-bottom: 0px;
   }
 }
 

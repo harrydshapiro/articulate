@@ -1,8 +1,23 @@
-#moore-computer img {
+#moore-computer .article-header-image {
     margin-bottom: 10px;
 }
 
 #recoleta #windowswap {
     height: 1000px;
     width: 1000px;
+}
+
+#moore-computer .editorial-images {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+#moore-computer .editorial-images.side-by-side img {
+    width: 49%;
+}
+
+#moore-computer .editorial-images.landscape img {
+    width: 100%;
+    border: 1px solid black;
 }
