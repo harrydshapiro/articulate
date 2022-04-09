@@ -13,11 +13,88 @@
     margin: 20px 0px;
 }
 
-#moore-computer .editorial-images.side-by-side img {
+.editorial-images.side-by-side img {
     width: 49%;
 }
 
-#moore-computer .editorial-images.landscape img {
+.editorial-images.landscape img {
     width: 100%;
+}
+
+#moore-computer .editorial-images.landscape img {
     border: 1px solid black;
+}
+
+.editorial-images.caption {
+    margin: 20px 0;
+}
+.editorial-images.caption figcaption {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+}
+#recoleta-windsor-comp.editorial-images img {
+    height: 41px;
+    width: auto;
+}
+.editorial-images.bollinger {
+    width: 100%;
+    max-width: 380px;
+    margin: 30px auto;
+}
+#egyptienne .editorial-images.ny-mag {
+    margin-bottom: 20px;
+}
+#egyptienne .editorial-images.ny-mag img {
+    width: 31%;
+}
+
+@media (max-width: 600px) {
+    #moore-computer .editorial-images.side-by-side img {
+        display: none;
+    }
+
+    #moore-computer .editorial-images.side-by-side img:nth-last-child(1) {
+        display: inline;
+        width: 100%;
+        margin: auto;
+    }
+    #egyptienne .editorial-images.ny-mag {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    #egyptienne .editorial-images.ny-mag img {
+        width: 47.5%;
+        margin-top: 20px
+    }
+    #egyptienne .editorial-images.ny-mag img:nth-of-type(1) {
+        margin-right: 3%;
+    }
+    #egyptienne .editorial-images.ny-mag img:nth-last-of-type(1) {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    #egyptienne .editorial-images.ny-mag {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;    
+    }
+}
+
+@media (min-width: 1200px) {
+    #recoleta .text-content {
+        position: relative;
+    }
+    #recoleta #editorial-images-container {
+        position: absolute;
+        top: 0;
+        width: min(calc((100vw - 780px)/2), 260px);
+        left: calc(100% + 6vw);
+        font-size: 90%;
+    }
+    #recoleta #editorial-images-container figure:nth-child(1) {
+        margin-top: 0;
+    }
 }
