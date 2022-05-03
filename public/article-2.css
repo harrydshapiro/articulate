@@ -13,26 +13,10 @@
     margin: 20px 0px;
 }
 
-.editorial-images.side-by-side img {
-    width: 49%;
-}
-
-.editorial-images.landscape img {
-    width: 100%;
-}
-
 #moore-computer .editorial-images.landscape img {
     border: 1px solid black;
 }
 
-.editorial-images.caption {
-    margin: 20px 0;
-}
-.editorial-images.caption figcaption {
-    width: 100%;
-    border-bottom: 1px solid black;
-    padding-bottom: 3px;
-}
 #recoleta-windsor-comp.editorial-images img {
     height: 41px;
     width: auto;

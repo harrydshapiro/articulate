@@ -1,0 +1,50 @@
+#intro ol {
+  margin-block-start: 0.25em;
+  counter-reset: item;
+  padding-inline-start: 1.5em;
+}
+#intro ol li {
+  display: block;
+}
+
+#intro ol li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  width: 0.8em;
+  display: inline-block;
+}
+
+.editorial-images {
+  margin: 20px 0;
+}
+
+#hobo-party-posters {
+  width: 100%;
+}
+
+.editorial-images .side-by-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 450px
+}
+
+.editorial-images .side-by-side > img {
+  object-fit: contain;
+}
+
+.editorial-images .side-by-side > img:first-child {
+  margin-right: 10px;
+}
+
+.editorial-images#autumn .side-by-side {
+  height: 434px;
+}
+.editorial-images#nature .side-by-side {
+  height: 393px;
+}
+.editorial-images#bad-trip .side-by-side {
+  height: 352px;
+}
