@@ -2,11 +2,6 @@
     margin-bottom: 10px;
 }
 
-#recoleta #windowswap {
-    height: 1000px;
-    width: 1000px;
-}
-
 #moore-computer .editorial-images {
     display: flex;
     justify-content: space-between;
@@ -17,10 +12,6 @@
     border: 1px solid black;
 }
 
-#recoleta-windsor-comp.editorial-images img {
-    height: 41px;
-    width: auto;
-}
 .editorial-images.bollinger {
     width: 100%;
     max-width: 380px;
@@ -31,6 +22,7 @@
 }
 #egyptienne .editorial-images.ny-mag img {
     width: 31%;
+    object-fit: cover;
 }
 
 @media (max-width: 600px) {
@@ -64,21 +56,5 @@
         display: flex;
         justify-content: space-between;
         margin: 30px 0;    
-    }
-}
-
-@media (min-width: 1200px) {
-    #recoleta .text-content {
-        position: relative;
-    }
-    #recoleta #editorial-images-container {
-        position: absolute;
-        top: 0;
-        width: min(calc((100vw - 780px)/2), 260px);
-        left: calc(100% + 6vw);
-        font-size: 90%;
-    }
-    #recoleta #editorial-images-container figure:nth-child(1) {
-        margin-top: 0;
     }
 }

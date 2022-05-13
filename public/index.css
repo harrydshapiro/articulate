@@ -19,6 +19,7 @@ html {
   text-rendering:optimizeLegibility;
   -webkit-font-feature-settings: "kern" 1;
   font-weight: 100;
+  font-size: 20px;
 }
 
 body {
@@ -58,7 +59,7 @@ a {
 
 article  {
   width: 60vw;
-  max-width: 600px;
+  max-width: 700px;
   margin: 100px auto auto;
 }
 
@@ -119,20 +120,20 @@ sup, sub {
 sub { 
   top: 0.4em; 
 }
+
+.editorial-images img {
+  object-fit: contain;
+}
+
 .editorial-images.side-by-side {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.editorial-images.side-by-side > img,
-.editorial-images.side-by-side > figure {
+.editorial-images.side-by-side > img {
   width: 49%;
   margin: 0;
-}
-
-.editorial-images.side-by-side > figure img {
-  width: 100%;
 }
 
 .editorial-images.landscape img {
@@ -149,6 +150,10 @@ sub {
 }
 
 @media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  
   article {
     width: 100%;
     margin: 35px auto auto
