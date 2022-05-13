@@ -19,6 +19,7 @@ html {
   text-rendering:optimizeLegibility;
   -webkit-font-feature-settings: "kern" 1;
   font-weight: 100;
+  font-size: 20px;
 }
 
 body {
@@ -58,11 +59,11 @@ a {
 
 article  {
   width: 60vw;
-  max-width: 600px;
+  max-width: 700px;
   margin: 100px auto auto;
 }
 
-article .header-image {
+.article-header-image {
   max-height: 130px;
   object-fit: contain;
 }
@@ -120,7 +121,39 @@ sub {
   top: 0.4em; 
 }
 
+.editorial-images img {
+  object-fit: contain;
+}
+
+.editorial-images.side-by-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.editorial-images.side-by-side > img {
+  width: 49%;
+  margin: 0;
+}
+
+.editorial-images.landscape img {
+  width: 100%;
+}
+
+.editorial-images.caption {
+  margin: 20px 0;
+}
+.editorial-images figcaption {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+}
+
 @media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  
   article {
     width: 100%;
     margin: 35px auto auto

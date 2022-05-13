@@ -2,41 +2,16 @@
     margin-bottom: 10px;
 }
 
-#recoleta #windowswap {
-    height: 1000px;
-    width: 1000px;
-}
-
 #moore-computer .editorial-images {
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
 }
 
-.editorial-images.side-by-side img {
-    width: 49%;
-}
-
-.editorial-images.landscape img {
-    width: 100%;
-}
-
 #moore-computer .editorial-images.landscape img {
     border: 1px solid black;
 }
 
-.editorial-images.caption {
-    margin: 20px 0;
-}
-.editorial-images.caption figcaption {
-    width: 100%;
-    border-bottom: 1px solid black;
-    padding-bottom: 3px;
-}
-#recoleta-windsor-comp.editorial-images img {
-    height: 41px;
-    width: auto;
-}
 .editorial-images.bollinger {
     width: 100%;
     max-width: 380px;
@@ -47,6 +22,7 @@
 }
 #egyptienne .editorial-images.ny-mag img {
     width: 31%;
+    object-fit: cover;
 }
 
 @media (max-width: 600px) {
@@ -80,21 +56,5 @@
         display: flex;
         justify-content: space-between;
         margin: 30px 0;    
-    }
-}
-
-@media (min-width: 1200px) {
-    #recoleta .text-content {
-        position: relative;
-    }
-    #recoleta #editorial-images-container {
-        position: absolute;
-        top: 0;
-        width: min(calc((100vw - 780px)/2), 260px);
-        left: calc(100% + 6vw);
-        font-size: 90%;
-    }
-    #recoleta #editorial-images-container figure:nth-child(1) {
-        margin-top: 0;
     }
 }

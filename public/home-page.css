@@ -43,6 +43,10 @@
   object-fit: cover;
 }
 
+#article-links .link-wrapper #article-4-img {
+  object-position: top;
+}
+
 @media (max-width: 750px) {
   #body-content {
     max-width: fit-content;
