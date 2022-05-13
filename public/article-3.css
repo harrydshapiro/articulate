@@ -65,3 +65,8 @@ article#weed p.article-header {
 article#weed p.article-subheader {
   text-align: center;
 }
+
+article#weed .editorial-images.side-by-side img {
+  width: 100%;
+  margin-bottom: 1em;
+}
