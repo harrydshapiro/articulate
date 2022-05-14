@@ -1,3 +1,3 @@
 #!/bin/bash
 
-for file in public/*.webp; do echo "$file" & magick ${file} "${file/webp/jpeg}" & rm "$file"; done
+for file in public/*.jpeg; do echo "$file" & magick ${file} "${file/jpeg/jpeg}" & rm "$file"; done
