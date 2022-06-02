@@ -1,0 +1,51 @@
+## ADMIN
+[ ] Define a formal schedule for all work *except for* content generation
+    - Probably need to block this out on a calendar
+
+## PARTNERSHIPS
+[ ] Find someone who can talk to me about my marketing goals
+    - Ideally someone who knows how to 1) define an audience 2) optimize social media outreach to that audience
+[ ] Find someone to help me with the graphic design of 1) web 2) print
+    - Really I'm looking for someone to help me with defining a design process and tool selection/learning
+    - I don't really need help with the design, although if they want to take that off my plate I'd be more than happy for them to :)
+[ ] Find someone to talk with about the LOE for zine printing and distribution
+[ ] Generally connect with the folks who run fontsinuse
+
+## MARKETING 
+[ ] Define the audience(s)
+    - I only care about something if it actually defines the audience, but here are some example considerations:
+        - Age
+        - Gender
+        - Aesthetic
+        - Where do they live?
+        - What social media accounts, podcasts, books, websites, food do they consume?
+        - What's their job?
+        - What's their education?
+[ ] Start sharing the site publicly:
+    - r/fonts
+    - r/typography
+    - r/graphic_design
+    - r/design
+    - https://typedrawers.com/
+    - https://typography.guru/forums/forum/2-talk/
+[ ] After defining audience(s), shift to:
+    - How do I find new followers in a cost-efficient manner?
+    - How do I reach existing followers in a cost efficient manner?
+    - Do I want a different audience? How might I do that?
+    - How does each audience like to consume content like mine?
+
+## TECH INITIATIVES
+[ ] Add cloudfront cacheing
+[ ] Turn site into a react app
+    - Core goals:
+        - DRY up HTML/CSS
+        - Improve mobile and desktop experience - there's some small little graphic weirdnesses
+[ ] More nuanced user tracking:
+    - define specific events
+    - have better tracking of upstream traffic sources
+[ ] Force HTTPS
+
+## CONTENT GENERATION
+[ ] Write an unthemed article for a font
+[ ] Write an unthemed article for a font
+[ ] Write an unthemed article for a font
