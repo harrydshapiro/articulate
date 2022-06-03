@@ -4,13 +4,15 @@ Hi,
 
 I run articulate.gallery, a website about the humanity of fonts. I’m writing to you because ____________________.
 
-Our goal is to get laypeople to think about fonts like you do: as intimate, personified, living beings. We communicate a font’s personality in many ways, including:
+// Ugh.... I don't like any of this...
+Our goal is to get laypeople to think about fonts like you do: as animate, living beings. We personalize fonts using all kinds of media:
 - Pseudo-biographical prose
 - Playlists
 - Infographics
 - Social media accounts on behalf of fonts
 - A font’s fake bank statement
 - Plenty of photos
+- Really anything else we can think of
 
 <Reminder of the reason why I’m reaching out>
 
