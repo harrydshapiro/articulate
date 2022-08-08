@@ -1,0 +1,48 @@
+#home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 90px;
+}
+
+.description-text {
+    margin-bottom: 2rem;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 2rem 0;
+}
+
+.tile img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.tile a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .tile {
+        width: 100%;
+        margin: 0 0 2rem;
+    }
+
+    .tile img {
+        height: unset;
+        width: 100%;
+        object-fit: cover;
+    }
+}
