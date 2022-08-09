@@ -48,9 +48,9 @@ jobs:
           aws-region: us-east-1
       # Copy the files from build folder to the S3 bucket
       - name: Deploy static site to root S3 bucket
-        run: aws s3 sync . s3://articulate.gallery --delete
+        run: aws s3 sync . s3://articulate.gallery
         working-directory: react-github-actions-build
 
       - name: Deploy static site to root S3 bucket
-        run: aws s3 sync . s3://www.articulate.gallery --delete
+        run: aws s3 sync . s3://www.articulate.gallery
         working-directory: react-github-actions-build
