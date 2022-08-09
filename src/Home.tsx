@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 function Tile ({ id, article }: { id: string, article: IArticle}) {
     return (
     <div className="tile">
-        <Link to={`/articles/${id}`}>{<><img src={article.image}></img><p>{article.name}</p></>}</Link>
+        <Link to={`/articles/${id}`}>{<><img alt="" src={article.image}></img><p>{article.name}</p></>}</Link>
     </div>
     )
 }

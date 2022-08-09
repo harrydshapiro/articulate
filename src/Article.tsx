@@ -63,8 +63,6 @@ function Section ({ section }: { section: Array<BodyText | ImageSingle | ImageDo
                             return (
                                 <iframe title={node.content} style={{'borderRadius':'12px'}} src={`https://open.spotify.com/embed/playlist/${node.content}?utm_source=generator`} width="100%" height="380" frameBorder="0" allowFullScreen={false} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                             )
-                        case 'custom-html':
-                            return node.content
                         default:
                             return <></>
                     }
