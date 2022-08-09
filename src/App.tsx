@@ -9,11 +9,12 @@ import {
 } from "react-router-dom";
 import { Home } from './Home';
 import { Artcile } from './Article';
+import { Nav } from './Nav'
 
 function App() {
   return (
     <BrowserRouter>
-      <Link to="/" id="navbar"><h1>articulate</h1></Link>
+      <Nav/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/articles/:articleId" element={<Artcile/>}/>

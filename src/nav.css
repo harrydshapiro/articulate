@@ -1,0 +1,21 @@
+.home-link-text {
+    line-height: 87%;
+    letter-spacing: -1.6px;
+}
+
+#navbar {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    color: black;
+    text-decoration: none;
+    text-shadow: -3px 2px 0px white;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        position: relative;
+        top: unset;
+        left: unset;
+    }
+}
