@@ -63,7 +63,7 @@ export interface IArticle {
 export const articles: Record<string, IArticle> = {
     'drugs':     {
         name: 'Drugs',
-        image: 'https://articulate.gallery/hobo-about-drugs.jpeg',
+        image: 'https://www.articulate.gallery/hobo-about-drugs.jpeg',
         headerContent: `This issue is about drugs.  \n  \nSorry mom.`,
         bodyContent: [
             [
@@ -71,7 +71,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'header-image',
                     content: {
-                        url: 'https://articulate.gallery/hobo.jpg'
+                        url: 'https://www.articulate.gallery/hobo.jpg'
                     }
                 },
                 {
@@ -81,10 +81,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-double',
                     content: [{
-                        url: 'https://articulate.gallery/hobo-autumn.jpeg',
+                        url: 'https://www.articulate.gallery/hobo-autumn.jpeg',
                         widthPercentage: 46.4,
                     }, {
-                        url: 'https://articulate.gallery/hobo-after-hours.jpeg',
+                        url: 'https://www.articulate.gallery/hobo-after-hours.jpeg',
                         widthPercentage: 53.6
                     }]
                 },
@@ -95,10 +95,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-double',
                     content: [{
-                        url: 'https://articulate.gallery/hobo-pear.jpeg',
+                        url: 'https://www.articulate.gallery/hobo-pear.jpeg',
                         widthPercentage: 50
                     }, {
-                        url: 'https://articulate.gallery/hobo-mushrooms.jpeg',
+                        url: 'https://www.articulate.gallery/hobo-mushrooms.jpeg',
                         widthPercentage: 50
                     }],
                     caption: 'Nature girlie'
@@ -110,7 +110,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-single',
                     content: {
-                        url: 'https://articulate.gallery/hobo-party-posters.gif'
+                        url: 'https://www.articulate.gallery/hobo-party-posters.gif'
                     }
                 },
                 {
@@ -120,10 +120,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-double',
                     content: [{
-                        url: 'https://articulate.gallery/hobo-about-drugs.jpeg',
+                        url: 'https://www.articulate.gallery/hobo-about-drugs.jpeg',
                         widthPercentage: 40.5
                     }, {
-                        url: 'https://articulate.gallery/hobo-bebop-deluxe.jpeg',
+                        url: 'https://www.articulate.gallery/hobo-bebop-deluxe.jpeg',
                         widthPercentage: 59.5
                     }],
                     caption: 'Scenes from (ego) death valley'
@@ -142,7 +142,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'header-image',
                     content: {
-                        url: 'https://articulate.gallery/shatter.jpg'
+                        url: 'https://www.articulate.gallery/shatter.jpg'
                     }
                 },
                 {
@@ -152,10 +152,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-double',
                     content: [{
-                        url: 'https://articulate.gallery/shatter-suicide.jpeg',
+                        url: 'https://www.articulate.gallery/shatter-suicide.jpeg',
                         widthPercentage: 50,
                     }, {
-                        url: 'https://articulate.gallery/shatter-acdc.jpeg',
+                        url: 'https://www.articulate.gallery/shatter-acdc.jpeg',
                         widthPercentage: 50
                     }]
                 },
@@ -166,10 +166,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-double',
                     content: [{
-                        url: 'https://articulate.gallery/shatter-schizo.jpeg',
+                        url: 'https://www.articulate.gallery/shatter-schizo.jpeg',
                         widthPercentage: 50,
                     }, {
-                        url: 'https://articulate.gallery/shatter-death-riders.jpeg',
+                        url: 'https://www.articulate.gallery/shatter-death-riders.jpeg',
                         widthPercentage: 50
                     }]
                 },
@@ -180,10 +180,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-double',
                     content: [{
-                        url: 'https://articulate.gallery/shatter-retreat-from-sanity.jpeg',
+                        url: 'https://www.articulate.gallery/shatter-retreat-from-sanity.jpeg',
                         widthPercentage: 47.9,
                     }, {
-                        url: 'https://articulate.gallery/shatter-psychopath-test.jpeg',
+                        url: 'https://www.articulate.gallery/shatter-psychopath-test.jpeg',
                         widthPercentage: 52.1
                     }]
                 },
@@ -256,7 +256,7 @@ export const articles: Record<string, IArticle> = {
     },
     'born-in-the-wrong-era': {
         name: 'Born in the wrong era',
-        image: 'https://articulate.gallery/moore-computer-computer-programming.jpeg',
+        image: 'https://www.articulate.gallery/moore-computer-computer-programming.jpeg',
         headerContent: 'these fonts were all born in the wrong era. they are a late bloomer, and old soul, and a child prodigy living his second life.',
         bodyContent: [
             // MOORE COMPUTER
@@ -264,7 +264,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'header-image',
                     content: {
-                        url: 'http://articulate.gallery/moore-computer.png'
+                        url: 'https://www.articulate.gallery/moore-computer.png'
                     }
                 },
                 {
@@ -274,10 +274,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-double',
                     content: [{
-                        url: 'http://articulate.gallery/moore-computer-appliance.jpeg',
+                        url: 'https://www.articulate.gallery/moore-computer-appliance.jpeg',
                         widthPercentage: 50
                     }, {
-                        url: 'http://articulate.gallery/moore-computer-computer-programming.jpeg',
+                        url: 'https://www.articulate.gallery/moore-computer-computer-programming.jpeg',
                         widthPercentage: 50
                     }]
                 },
@@ -288,12 +288,12 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-single',
                     content: {
-                        url: 'http://articulate.gallery/moore-computer-odyssey.jpeg'
+                        url: 'https://www.articulate.gallery/moore-computer-odyssey.jpeg'
                     }
                 },
                 {
                     type: 'body-text',
-                    content: `When I see Moore Computer hawking their wares in vintage Etsy stores and posing for selfies on '70s IG moodboards, I see a [playfulness](https://fontsinuse.com/uses/43460/pizza-planet-spaceport-entry-in-toy-story-199) that was missing when they were the spokesperson for [computer manuals](http://articulate.gallery/moore-computer-computer-programming.jpeg) and [appliance advertisements](http://articulate.gallery/moore-computer-appliance.jpeg). Their value isn't conditional on their technical abilities - people love them for who they are.  \n  \nLife moves fast and technology moves faster. It's a rare gift that Moore Computer was finally able to slow down and enjoy it.`
+                    content: `When I see Moore Computer hawking their wares in vintage Etsy stores and posing for selfies on '70s IG moodboards, I see a [playfulness](https://fontsinuse.com/uses/43460/pizza-planet-spaceport-entry-in-toy-story-199) that was missing when they were the spokesperson for [computer manuals](https://www.articulate.gallery/moore-computer-computer-programming.jpeg) and [appliance advertisements](https://www.articulate.gallery/moore-computer-appliance.jpeg). Their value isn't conditional on their technical abilities - people love them for who they are.  \n  \nLife moves fast and technology moves faster. It's a rare gift that Moore Computer was finally able to slow down and enjoy it.`
                 },
                 {
                     type: 'playlist',
@@ -305,7 +305,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: "header-image",
                     content: {
-                        url: 'http://articulate.gallery/recoleta.png'
+                        url: 'https://www.articulate.gallery/recoleta.png'
                     }
                 },
                 {
@@ -315,14 +315,14 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-single',
                     content: {
-                        url: 'http://articulate.gallery/recoleta-black.png'
+                        url: 'https://www.articulate.gallery/recoleta-black.png'
                     },
                     caption: `Recoleta's heaviest weight, poofy and present like facetiming in a groutfit.`
                 },
                 {
                     type: 'image-single',
                     content: {
-                        url: 'http://articulate.gallery/recoleta-kate-bollinger.jpeg'
+                        url: 'https://www.articulate.gallery/recoleta-kate-bollinger.jpeg'
                     },
                     caption: `Windsor, Recoleta's style icon.`
                 },
@@ -340,7 +340,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'header-image',
                     content: {
-                        url: 'http://articulate.gallery/egyptienne.png'
+                        url: 'https://www.articulate.gallery/egyptienne.png'
                     }
                 },
                 {
@@ -350,13 +350,13 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'image-triple',
                     content: [{
-                        url: 'http://articulate.gallery/New-York-Magazine-16-Aug-1976.jpeg',
+                        url: 'https://www.articulate.gallery/New-York-Magazine-16-Aug-1976.jpeg',
                         widthPercentage: 34.1333,
                     }, {
-                        url: 'http://articulate.gallery/NewYorkMagazine-1975-0317.jpeg',
+                        url: 'https://www.articulate.gallery/NewYorkMagazine-1975-0317.jpeg',
                         widthPercentage: 31.7333
                     }, {
-                        url: 'http://articulate.gallery/NewYorkMagazine-1968-0722.png',
+                        url: 'https://www.articulate.gallery/NewYorkMagazine-1968-0722.png',
                         widthPercentage: 34.1333
                     }],
                 },
@@ -369,7 +369,7 @@ export const articles: Record<string, IArticle> = {
     },
     'creativity-in-constraint': {
         name: 'Creativity in constraint',
-        image: 'http://articulate.gallery/pilowlava-heiroglyphics.png',
+        image: 'https://www.articulate.gallery/pilowlava-heiroglyphics.png',
         headerContent: 'this issue is about creativity within constraint. we hope it makes you think about your own struggle to stand out while fitting in.',
         bodyContent: [
             [
@@ -377,7 +377,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'header-image',
                     content: {
-                        url: 'http://articulate.gallery/pilowlava.jpg'
+                        url: 'https://www.articulate.gallery/pilowlava.jpg'
                     },
                 },
                 { 
@@ -398,7 +398,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'header-image',
                     content: {
-                        url: 'http://articulate.gallery/averia-serif.jpeg'
+                        url: 'https://www.articulate.gallery/averia-serif.jpeg'
                     },
                 },
                 { 
@@ -419,7 +419,7 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'header-image',
                     content: {
-                        url: 'http://articulate.gallery/forma.jpeg'
+                        url: 'https://www.articulate.gallery/forma.jpeg'
                     },
                 },
                 { 
