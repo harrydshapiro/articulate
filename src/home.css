@@ -11,9 +11,11 @@
 }
 
 .tiles {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .tile {
@@ -21,13 +23,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 2rem 2rem 0;
 }
 
 .tile img {
-    height: 400px;
-    width: 400px;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    width: 100%;
 }
 
 .tile a {

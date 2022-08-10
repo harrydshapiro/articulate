@@ -63,7 +63,7 @@ export interface IArticle {
 export const articles: Record<string, IArticle> = {
     'drugs':     {
         name: 'Drugs',
-        image: '/hobo-about-drugs.jpeg',
+        image: '/hobo-about-drugs-square.jpeg',
         headerContent: `This issue is about drugs.  \n  \nSorry mom.`,
         bodyContent: [
             [
@@ -256,7 +256,7 @@ export const articles: Record<string, IArticle> = {
     },
     'born-in-the-wrong-era': {
         name: 'Born in the wrong era',
-        image: '/moore-computer-computer-programming.webp',
+        image: '/moore-computer-computer-programming-square.jpeg',
         headerContent: 'these fonts were all born in the wrong era. they are a late bloomer, and old soul, and a child prodigy living his second life.',
         bodyContent: [
             // MOORE COMPUTER
@@ -428,12 +428,69 @@ export const articles: Record<string, IArticle> = {
                 },
                 {
                     type: 'custom-html',
-                    content: `<table class="width-100p"><colgroup><col><col><col></colgroup><thead><tr><th>FMK</th><th>LA or NYC</th><th>Where'd their parents get their money?</th></tr></thead><tbody><tr><td>Fuck: Tulip Chair  \n  \n  \nMarry: Eames Recliner  \n  \nKill: Noguchi Coffee Table  \n  \n(Bonus) Mistress: MoMA Hoodie  \n</td><td>Milan :)</td><td>So I heard their mom's dad was Carlton Pepperidge of Pepperidge farm, but now the money is mostly tied up in art and their Foundation's real estate.</td></tr></tbody></table>`
+                    content: `<table class="width-100p"><colgroup><col><col><col></colgroup><thead><tr><th>FMK</th><th>LA or NYC</th><th>Where'd their parents get their money?</th></tr></thead><tbody><tr><td>Fuck: Tulip Chair<br><br>Marry: Eames Recliner<br><br>Kill: Noguchi Coffee Table<br><br>(Bonus) Mistress: MoMA Hoodie</td><td>Milan :)</td><td>So I heard their mom's dad was Carlton Pepperidge of Pepperidge farm, but now the money is mostly tied up in art and their Foundation's real estate.</td></tr></tbody></table>`
                 },
                 {
                     type: 'playlist',
                     content: '3IzfqKuqQrT7XM0qsVip5j'
                 }
+            ]
+        ]
+    },
+    'family': {
+        image: '/itc-busorama-lou-reed.jpeg',
+        name: 'Family',
+        headerContent: `"font family" is a technical typographic term. it's also a human one. fonts have families like yours: loving, inescapable tribes that bring us into this earth and take us out of it, for better or worse.`,
+        bodyContent: [
+            [
+                {
+                    type: 'header-image',
+                    content: {
+                        url: '/itc-busorama.png'
+                    }
+                },
+                {
+                    type: 'body-text',
+                    content: `Daddy's mother's cousin had me in her grip at the Bat Mitzvah luncheon. “Of course you love to sing. You know, your Great Great Aunt Nellie was a song and dance girl.” Her weathered palms were clasped over my hands, with barn-red lips pursed in a wry smile and watery eyes were looking to me for something I'm not yet poised enough to give.  \n  \nI am 5'3” and unaccustomed to looking down, so the four inches that I had over Daddy's mother's cousin shoved me atop a guilt-inducing pedestal upon which I want to curl up, apologize, and vanish. Through the fog of my banal anxiety I caught when she finished talking and, after a beat of self-gathering, agreed wholeheartedly, flashed a wide smile, and thanked her for her gift.`
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/itc-busorama-martha-graham.webp',
+                        widthPercentage: 49,
+                    }, {
+                        url: '/itc-busorama-pravo.webp',
+                        widthPercentage: 51
+                    }]
+                },
+                {
+                    type: 'body-text',
+                    content: `She had given me a framed picture of Great Great Aunt Nellie on stage, a card with an elegant and indecipherable scrawl, and a check for $18.  \n  \nThe picture was magnificent. Nellie was on display yet in control, wearing nothing but a dress and a microphone. Her head was tilted back to the rafters, one leg bent and the other slopping forward. If she held her mic stand any close it would have been on the other side of her. Above her, a sign hung like a book cover's title: “Nellie Seagull and the Sapphic Saphartics.”  \n  \nThe font was the platonic ideal of a display font. It spoke with a voice so clear and self-assured that it dictated the entire show. It practically danced the words, with As and Ss that curled up and leaned back. The font was beautiful because it was confident. It stood out for architectural choices - a perfectly circular O, a bent T-bar, a swan's-neck S - that were as striking as they were simple. The font was, in other words, Nellie: on display and in control.`
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/itc-busorama-pointer-sisters.jpeg',
+                        widthPercentage: 50,
+                    }, {
+                        url: '/itc-busorama-incredible-bongo-band.jpeg',
+                        widthPercentage: 50
+                    }]
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/itc-busorama-centipede-sleeve.jpeg',
+                        widthPercentage: 50,
+                    }, {
+                        url: '/itc-busorama-lou-reed.jpeg',
+                        widthPercentage: 50
+                    }]
+                },
+                {
+                    type: 'body-text',
+                    content: `There were 3 weeks left in the school year, so as a newly-minted Jewish adult I made the mature decision to focus my studies on doodles. I drew eyes and cubes and squiggles and shoes, but mostly I drew the words that came through my head. Made up words in Bubble letters, adult words in Declaration of Independence letters, the word “coniferous” ten times across my Environmental Science handout in log cabin letters.  \n  \nI saved the glamorous words for Nellie's font.`
+                },
             ]
         ]
     }
