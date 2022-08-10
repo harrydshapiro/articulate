@@ -451,7 +451,7 @@ export const articles: Record<string, IArticle> = {
                 },
                 {
                     type: 'body-text',
-                    content: `Daddy's mother's cousin had me in her grip at the Bat Mitzvah luncheon. “Of course you love to sing. You know, your Great Great Aunt Nellie was a song and dance girl.” Her weathered palms were clasped over my hands, with barn-red lips pursed in a wry smile and watery eyes were looking to me for something I'm not yet poised enough to give.  \n  \nI am 5'3” and unaccustomed to looking down. The four inches that I had over Daddy's mother's cousin put me on a guilt-inducing pedestal upon which I want to curl up, apologize, and vanish. Through the fog of my banal anxiety I caught when she finished talking and, after a beat of self-gathering, agreed wholeheartedly, flashed a wide smile, and thanked her for her gift.`
+                    content: `Daddy's mother's cousin had me in her grip at the Bat Mitzvah luncheon. “Of course you love to sing. You know, your Great Great Aunt Nellie was a song and dance girl.” Her weathered palms were clasped over my hands, with barn-red lips pursed in a wry smile and watery eyes that were looking to mine for something I'm not yet poised enough to give.  \n  \nI am 5'3” and unaccustomed to looking down. The four inches that I had over Daddy's mother's cousin put me on a guilt-inducing pedestal upon which I want to curl up, apologize, and vanish. Through the fog of my banal anxiety I caught when she finished talking and, after a beat of self-gathering, agreed wholeheartedly, flashed a wide smile, and thanked her for her gift.`
                 },
                 {
                     type: 'image-double',
