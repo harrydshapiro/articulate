@@ -489,7 +489,7 @@ export const articles: Record<string, IArticle> = {
                 },
                 {
                     type: 'body-text',
-                    content: `There were 3 weeks left in the school year, so as a newly-minted Jewish adult I made the mature decision to focus my studies on doodles. I drew eyes and cubes and squiggles and shoes, but mostly I drew the words that came through my head. Made up words in Bubble letters, adult words in Declaration of Independence letters, the word “coniferous” ten times across my Environmental Science handout in log cabin letters.  \n  \nI saved the glamorous words for Nellie's font.`
+                    content: `There were 3 weeks left in the school year, so as a newly-minted Jewish woman I made the mature decision to focus my studies on doodles. I drew eyes and cubes and squiggles and shoes, but mostly I drew the words that came through my head. Made up words in Bubble letters, adult words in Declaration of Independence letters, the word “coniferous” ten times across my Environmental Science handout in log cabin letters.  \n  \nI saved the glamorous words for Nellie's font.`
                 },
             ]
         ]
