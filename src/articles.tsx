@@ -1,5 +1,5 @@
 export interface ArticleNode {
-    type: 'body-text' | 'image-single' | 'image-double' | 'image-triple' | 'playlist' | 'header-image' | 'custom-html';
+    type: 'body-text' | 'image-single' | 'image-double' | 'image-triple' | 'image-quad' | 'playlist' | 'header-image' | 'custom-html';
     content: any,
 }
 
@@ -43,6 +43,16 @@ export interface ImageTriple extends ArticleNode {
     caption?: string
 }
 
+export interface ImageQuad extends ArticleNode {
+    type: 'image-quad',
+    content: Array<{
+        url: string
+        caption?: string
+        widthPercentage: number
+    }>,
+    caption?: string
+}
+
 export interface Playlist extends ArticleNode {
     type: 'playlist',
     content: string
@@ -57,10 +67,88 @@ export interface IArticle {
     name: string,
     image: string,
     headerContent: string;
-    bodyContent: Array<Array<BodyText | ImageSingle | ImageDouble | ImageTriple | Playlist | HeaderImage | CustomHtml>>;
+    bodyContent: Array<Array<BodyText | ImageSingle | ImageDouble | ImageTriple | ImageQuad | Playlist | HeaderImage | CustomHtml>>;
 }
 
 export const articles: Record<string, IArticle> = {
+    'family': {
+        image: '/Family_Eurostile_01.jpeg',
+        name: 'Family',
+        headerContent: `"font family" is a technical typographic term. it's also a human one. fonts have families like yours: loving, inescapable tribes that bring us into this earth and take us out of it, for better or worse.`,
+        bodyContent: [
+            [
+                {
+                    type: 'image-quad',
+                    content: [{
+                        url: '/Family_Eurostile_01.jpeg',
+                        widthPercentage: 48
+                    }, {
+                        url: '/family-ties.png',
+                        widthPercentage: 52
+                    },{
+                        url: '/the-hogan-family.png',
+                        widthPercentage: 48
+                    }, {
+                        url: '/the-partridge-family.jpeg',
+                        widthPercentage: 52
+                    }],
+                },
+            ],
+            // LANGUAGE BARRIERS
+            [
+                {
+                    type: 'body-text',
+                    content: `As long as it stays together, a family is a practice in normalization alchemy: it makes the unnatural natural. Through time, the lack of an alternative, and the need to just get along,  families adapt to themselves like cacti intertwined.  \n  \nThis can lead to some funny pairings. Black sheep uncles and piano prodigy nieces, California cousins and Winnetka grandmas, twins who got the brains and the beauty and twins who got the humor. Save for the mumbling toddler and the conspiratorial brother who doesn’t believe in phones or email, they can all communicate. It’s the understanding that seems to be the problem. And when that understanding breaks down, it can be hard to feel the love.  \n  \nIn fact, you might not need to communicate at all to feel the family love. Like seeing your Japanese cousins or meeting your Israeli mother-in-law for the first time, there’s something else to it. Going home, you might turn to your fiancé and remark how that you really did feel the love with an intended undercurrent of surprise in your tone. You’ll intellectualize it like a dog whisper explaining a pet to its owner - it’s must be about the eye contact, smiles, and tone of voice. And they’ll turn to you in a mix of amusement and frustration and say, yes of course they love you, sweetie. You’re family.  \n  \nTechnically speaking, fonts are representations are letters, so it might seem like a language barrier is a bit of a deal breaker. But you see the font before you read the word, and as a result the font develops a way of being in the world entirely separate from its text. And just like a baby and a puppy, sometimes two fonts will find each other and know that although they’ll never talk, they’ll always understand each other. Like family.  \n  \nHere are some of those extra-lingual font pairings.`
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/el-al-price-list-cover.webp',
+                        widthPercentage: 50
+                    }, {
+                        url: '/el-al-price-list-menu.webp',
+                        widthPercentage: 50
+                    }],
+                    caption: 'El-Al inflight menu, 1970. It takes a beat to even realize there\'s two langauges on the front.'
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/kanji-kana-bline-@-centre-dart-montpellier-01-600x900-q92.jpeg',
+                        widthPercentage: 50.5
+                    }, {
+                        url: '/kanji-kana-bline-a-la-fenetre-catalogue-10-1600x1067-q95.jpeg',
+                        widthPercentage: 49.5
+                    }],
+                    caption: 'Booklet for an <a href="http://www.baldingervuhuu.com/projets/kanji-kana-bline-a-la-fenetre-centre-dart-montpellier/client:centre-d-art-montpellier">exhibition</a> studying the connection of kanji, hiragana, katakana and Latin in Japanese writing.'
+                },
+                {
+                    type: 'custom-html',
+                    content: '<video src="/boy-meets-world-brothers.mp4" controls>'
+                },
+            ],
+            [
+                {
+                    type: 'header-image',
+                    content: {
+                        url: '/itc-busorama.png'
+                    }
+                },
+                {
+                    type: 'body-text',
+                    content: `Daddy's mother's cousin had me in her grip at the Bat Mitzvah luncheon. “Of course you love to sing. You know, your Great Great Aunt Nellie was a song and dance girl in the 20's.” Her weathered palms were clasped over my hands, with barn-red lips pursed in a wry smile and watery eyes that were looking to mine for something I'm not yet poised enough to give.  \n  \nI am 5'3” and unaccustomed to looking down. The four inches that I had over Daddy's mother's cousin put me on a guilt-inducing pedestal upon which I want to curl up, apologize, and vanish. Through the fog of my banal anxiety I caught when she finished talking and, after a beat of self-gathering, agreed wholeheartedly, flashed a wide smile, and thanked her for her gift.`
+                },
+                {
+                    type: 'body-text',
+                    content: `She had given me a framed picture of Great Great Aunt Nellie on stage, a card with an elegant and indecipherable scrawl, and a check for $18.  \n  \nThe picture was magnificent. Nellie was on display yet in control, wearing nothing but a dress and a microphone. Her head was tilted back to the rafters, one leg bent and the other slopping forward. If she held her mic stand any close it would have been on the other side of her. Above her, a sign hung like a book cover's title: “Nellie Seagull and the Sapphic Saphartics.”  \n  \nThe font was the platonic ideal of a display font. It spoke with a voice so clear and self-assured that it dictated the entire show. It practically danced the words, with As and Ss that curled up and leaned back. The font was beautiful because it was confident. It stood out for architectural choices - a perfectly circular O, a bent T-bar, a swan's-neck S - that were as striking as they were simple. The font was, in other words, Nellie: on display and in control.`
+                },
+                {
+                    type: 'body-text',
+                    content: `There were 3 weeks left in the school year, so as a newly-minted Jewish woman I made the mature decision to focus my studies on doodles. I drew eyes and cubes and squiggles and shoes, but mostly I drew the words that came through my head. Made up words in Bubble letters, adult words in Declaration of Independence letters, the word “coniferous” ten times across my Environmental Science handout in log cabin letters.  \n  \nI saved the glamorous words for Nellie's font.`
+                },
+            ]
+        ]
+    },
     'drugs':     {
         name: 'Drugs',
         image: '/hobo-about-drugs-square.jpeg',
@@ -437,61 +525,4 @@ export const articles: Record<string, IArticle> = {
             ]
         ]
     },
-    'family': {
-        image: '/itc-busorama-lou-reed.jpeg',
-        name: 'Family',
-        headerContent: `"font family" is a technical typographic term. it's also a human one. fonts have families like yours: loving, inescapable tribes that bring us into this earth and take us out of it, for better or worse.`,
-        bodyContent: [
-            [
-                {
-                    type: 'header-image',
-                    content: {
-                        url: '/itc-busorama.png'
-                    }
-                },
-                {
-                    type: 'body-text',
-                    content: `Daddy's mother's cousin had me in her grip at the Bat Mitzvah luncheon. “Of course you love to sing. You know, your Great Great Aunt Nellie was a song and dance girl.” Her weathered palms were clasped over my hands, with barn-red lips pursed in a wry smile and watery eyes that were looking to mine for something I'm not yet poised enough to give.  \n  \nI am 5'3” and unaccustomed to looking down. The four inches that I had over Daddy's mother's cousin put me on a guilt-inducing pedestal upon which I want to curl up, apologize, and vanish. Through the fog of my banal anxiety I caught when she finished talking and, after a beat of self-gathering, agreed wholeheartedly, flashed a wide smile, and thanked her for her gift.`
-                },
-                {
-                    type: 'image-double',
-                    content: [{
-                        url: '/itc-busorama-martha-graham.webp',
-                        widthPercentage: 49,
-                    }, {
-                        url: '/itc-busorama-pravo.webp',
-                        widthPercentage: 51
-                    }]
-                },
-                {
-                    type: 'body-text',
-                    content: `She had given me a framed picture of Great Great Aunt Nellie on stage, a card with an elegant and indecipherable scrawl, and a check for $18.  \n  \nThe picture was magnificent. Nellie was on display yet in control, wearing nothing but a dress and a microphone. Her head was tilted back to the rafters, one leg bent and the other slopping forward. If she held her mic stand any close it would have been on the other side of her. Above her, a sign hung like a book cover's title: “Nellie Seagull and the Sapphic Saphartics.”  \n  \nThe font was the platonic ideal of a display font. It spoke with a voice so clear and self-assured that it dictated the entire show. It practically danced the words, with As and Ss that curled up and leaned back. The font was beautiful because it was confident. It stood out for architectural choices - a perfectly circular O, a bent T-bar, a swan's-neck S - that were as striking as they were simple. The font was, in other words, Nellie: on display and in control.`
-                },
-                {
-                    type: 'image-double',
-                    content: [{
-                        url: '/itc-busorama-pointer-sisters.jpeg',
-                        widthPercentage: 50,
-                    }, {
-                        url: '/itc-busorama-incredible-bongo-band.jpeg',
-                        widthPercentage: 50
-                    }]
-                },
-                {
-                    type: 'image-double',
-                    content: [{
-                        url: '/itc-busorama-centipede-sleeve.jpeg',
-                        widthPercentage: 50,
-                    }, {
-                        url: '/itc-busorama-lou-reed.jpeg',
-                        widthPercentage: 50
-                    }]
-                },
-                {
-                    type: 'body-text',
-                    content: `There were 3 weeks left in the school year, so as a newly-minted Jewish woman I made the mature decision to focus my studies on doodles. I drew eyes and cubes and squiggles and shoes, but mostly I drew the words that came through my head. Made up words in Bubble letters, adult words in Declaration of Independence letters, the word “coniferous” ten times across my Environmental Science handout in log cabin letters.  \n  \nI saved the glamorous words for Nellie's font.`
-                },
-            ]
-        ]
-    }
 }

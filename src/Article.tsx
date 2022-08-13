@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useParams, useNavigate } from 'react-router-dom';
-import { articles, BodyText, ImageSingle, ImageDouble, Playlist, HeaderImage, CustomHtml, ImageTriple } from './articles';
+import { articles, BodyText, ImageSingle, ImageDouble, Playlist, HeaderImage, CustomHtml, ImageTriple, ImageQuad } from './articles';
 import ReactMarkdown from 'react-markdown'
 import './article.css'
 import rehypeRaw from 'rehype-raw'
 
 
-function Section ({ section }: { section: Array<BodyText | ImageSingle | ImageDouble | ImageTriple | Playlist | HeaderImage | CustomHtml>}) {
+function Section ({ section }: { section: Array<BodyText | ImageSingle | ImageDouble | ImageTriple | ImageQuad | Playlist | HeaderImage | CustomHtml>}) {
     return (
         <div className="article-section">
             {
@@ -41,9 +41,27 @@ function Section ({ section }: { section: Array<BodyText | ImageSingle | ImageDo
                                     <div className="img-container" style={{width: `calc(${node.content[1].widthPercentage}% - 5px)`}}>
                                         <img src={node.content[1].url}></img>
                                     </div>
-                                    {node.caption ? <figcaption className="caption">{<ReactMarkdown linkTarget="_blank" children={node.caption}/>}</figcaption> : null}
+                                    {node.caption ? <figcaption className="caption">{<ReactMarkdown linkTarget="_blank" children={node.caption} rehypePlugins={[rehypeRaw]}/>}</figcaption> : null}
                                 </div>
                             )
+                        case 'image-quad':
+                                return (
+                                    <div className="img-wrapper quad">
+                                        <div className="img-container" style={{ width: `calc(${node.content[0].widthPercentage}% - 5px)` }}>
+                                            <img src={node.content[0].url}></img>
+                                        </div>
+                                        <div className="img-container" style={{width: `calc(${node.content[1].widthPercentage}% - 5px)`}}>
+                                            <img src={node.content[1].url}></img>
+                                        </div>
+                                        <div className="img-container" style={{ width: `calc(${node.content[2].widthPercentage}% - 5px)` }}>
+                                            <img src={node.content[2].url}></img>
+                                        </div>
+                                        <div className="img-container" style={{width: `calc(${node.content[3].widthPercentage}% - 5px)`}}>
+                                            <img src={node.content[3].url}></img>
+                                        </div>
+                                        {node.caption ? <figcaption className="caption">{<ReactMarkdown linkTarget="_blank" children={node.caption} rehypePlugins={[rehypeRaw]}/>}</figcaption> : null}
+                                    </div>
+                                )
                         case 'image-triple':
                             return (
                                 <div className="img-wrapper triple">
