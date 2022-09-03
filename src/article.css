@@ -12,6 +12,10 @@
     margin-top: 90px;
 }
 
+.article-section .section-title {
+    text-align: center;
+}
+
 .article-section .header-image {
     width: 100%;
     display: flex;
@@ -59,8 +63,13 @@
     width: 33.33333%;
 }
 
+.article-section .specimen-gallery-wrapper img {
+    height: 50px;
+    max-width: 100%;
+    object-fit: contain;
+}
 
-.article-section .body-text p, .article-section .img-wrapper, .article-section table {
+.article-section .body-text p, .article-section > * {
     margin-bottom: 1em;
 }
 
@@ -104,6 +113,12 @@
     margin-bottom: 0 !important;
 }
 
+.article-section .text-separator {
+    width: 60%;
+    border: 0.5px solid black;
+    margin: 60px auto;
+}
+
 .footer-text {
     margin-top: 4rem;
 }
@@ -126,5 +141,9 @@
 
     .article-section .img-container:last-of-type {
         margin-bottom: 0;
+    }
+
+    .article-section .specimen-gallery-wrapper img {
+        height: 40px;
     }
 }

@@ -1,5 +1,5 @@
 export interface ArticleNode {
-    type: 'body-text' | 'image-single' | 'image-double' | 'image-triple' | 'image-quad' | 'playlist' | 'header-image' | 'custom-html';
+    type: 'body-text' | 'image-single' | 'image-double' | 'image-triple' | 'image-quad' | 'playlist' | 'header-image' | 'custom-html' | 'specimen-gallery' | 'section-title' | 'text-separator';
     content: any,
 }
 
@@ -53,6 +53,15 @@ export interface ImageQuad extends ArticleNode {
     caption?: string
 }
 
+export interface SpecimenGallery extends ArticleNode {
+    type: 'specimen-gallery',
+    content: Array<{
+        url: string,
+        heightAdjust?: number // the number to transform by. 2 means double height.
+    }>,
+    caption?: string
+}
+
 export interface Playlist extends ArticleNode {
     type: 'playlist',
     content: string
@@ -63,42 +72,184 @@ export interface CustomHtml extends ArticleNode {
     content: string
 }
 
+export interface SectionTitle extends ArticleNode {
+    type: 'section-title',
+    content: string
+}
+
+export interface TextSeparator extends ArticleNode {
+    type: 'text-separator',
+    content: null
+}
+
 export interface IArticle {
     name: string,
     image: string,
     headerContent: string;
-    bodyContent: Array<Array<BodyText | ImageSingle | ImageDouble | ImageTriple | ImageQuad | Playlist | HeaderImage | CustomHtml>>;
+    bodyContent: Array<Array<BodyText | ImageSingle | ImageDouble | ImageTriple | ImageQuad | Playlist | HeaderImage | CustomHtml | SpecimenGallery | SectionTitle | TextSeparator>>;
 }
 
 export const articles: Record<string, IArticle> = {
     'family': {
         image: '/Family_Eurostile_01.jpeg',
         name: 'Family',
-        headerContent: `"font family" is a technical typographic term. it's also a human one. fonts have families like yours: loving, inescapable tribes that bring us into this earth and take us out of it, for better or worse.`,
+        headerContent: `Fonts appear sui generis, but they are not. This issue will tag along with fonts as they head back home to their loving, inescapable families. As you scroll through their reunions, remember this: fonts are only different because they are the same.`,
         bodyContent: [
+            // GALLERY
             [
+                // {
+                //     type: 'section-title',
+                //     content: 'the family that watches together'
+                // },
                 {
-                    type: 'image-quad',
+                    type: 'image-double',
                     content: [{
                         url: '/Family_Eurostile_01.jpeg',
                         widthPercentage: 48
                     }, {
                         url: '/family-ties.png',
                         widthPercentage: 52
-                    },{
-                        url: '/the-hogan-family.png',
-                        widthPercentage: 48
-                    }, {
-                        url: '/the-partridge-family.jpeg',
-                        widthPercentage: 52
                     }],
                 },
+            ],
+            // SIBLINGS
+            [
+                {
+                    type: 'section-title',
+                    content: 'typefaces'
+                },
+                {
+                    type: 'body-text',
+                    content: 'Technically speaking, a typeface is a collection of fonts that, while varying in height, width, weight, spacing, and slope, nonetheless share unifying visual themes. You can always arrive at one font by taking another in its typeface and pinching, pulling, yanking, or squeezing it.  \n  \nLike siblings, fonts of a typeface will often finish each others sentences. They’ll have long conversations comprised entirely of inside jokes. Their voices match in pitch and cadence, having come together over the years like a string section tuning before an overture. They’ll talk over each other yet still hear each other perfectly.'
+                },
+                {
+                    type: 'text-separator',
+                    content: null
+                },
+                {
+                    type: 'body-text',
+                    content: 'Take, for example, the Druks. They gab back and forth like bottles clanging in the recyling bin. "Conversation" isn\'t quite the right word for it. The individual voices are almost irrelevant. It\'s only through their syncopated clater that what they\'re really trying to say - "I love you guys" - comes through.'
+                },
+                {
+                    type: 'custom-html',
+                    content: '<br>'
+                },
+                // DRUK
+                {
+                    type: 'specimen-gallery',
+                    content: [{
+                        url: '/druk.png',
+                    }, {
+                        url: '/druk-condensed.png',
+                    }, {
+                        url: '/druk-wide.png',
+                        heightAdjust: 0.8
+                    }]
+                },
+                {
+                    type: 'image-single',
+                    content: {
+                        url: '/imagen_05-18-15_14-51-43_1920.webp'
+                    }
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/imagen_05-18-15_14-51-56_1920.jpeg',
+                        widthPercentage: 60.7
+                    }, {
+                        url: '/imagen_05-18-15_14-52-03_1920.jpeg',
+                        widthPercentage: 39.3
+                    }]
+                },
+                {
+                    type: 'image-single',
+                    content: {
+                        url: '/imagen_05-18-15_15-23-30_1920.webp'
+                    }
+                },
+                {
+                    type: 'image-single',
+                    content: {
+                        url: '/onze_01.jpeg'
+                    }
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/COYN6LkWwAAQzyP-jpg-large.webp',
+                        widthPercentage: 58.75,
+                    }, {
+                        url: '/NoamChomskySeriesRethinkingCamelot1200.jpeg',
+                        widthPercentage: 41.25
+                    }]
+                },
+                // SYNCRO
+                {
+                    type: 'text-separator',
+                    content: null
+                },
+                {
+                    type: 'body-text',
+                    content: ' If the Druks are the Safdie brothers, the Syncros are the Coens. They are more measured and paced, giving each other space and letting their story breathe.'
+                },
+                {
+                    type: 'specimen-gallery',
+                    content: [{
+                        url: '/syncro.png',
+                    }, {
+                        url: '/syncro-mono.png',
+                    }]
+                },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/AnotherMag_Inside4.jpeg',
+                        widthPercentage: 50
+                    }, {
+                        url: '/AnotherMag_Inside1.jpeg',
+                        widthPercentage: 50
+                    }]
+                },
+                {
+                    type: 'image-single',
+                    content: {
+                        url: '/SignsSymbols_3.jpg'
+                    }
+                },
+    
             ],
             // LANGUAGE BARRIERS
             [
                 {
+                    type: 'section-title',
+                    content: 'crossing the language barrier'
+                },
+                {
                     type: 'body-text',
-                    content: `As long as it stays together, a family is a practice in normalization alchemy: it makes the unnatural natural. Through time, the lack of an alternative, and the need to just get along,  families adapt to themselves like cacti intertwined.  \n  \nThis can lead to some funny pairings. Black sheep uncles and piano prodigy nieces, California cousins and Winnetka grandmas, twins who got the brains and the beauty and twins who got the humor. Save for the mumbling toddler and the conspiratorial brother who doesn’t believe in phones or email, they can all communicate. It’s the understanding that seems to be the problem. And when that understanding breaks down, it can be hard to feel the love.  \n  \nIn fact, you might not need to communicate at all to feel the family love. Like seeing your Japanese cousins or meeting your Israeli mother-in-law for the first time, there’s something else to it. Going home, you might turn to your fiancé and remark how that you really did feel the love with an intended undercurrent of surprise in your tone. You’ll intellectualize it like a dog whisper explaining a pet to its owner - it’s must be about the eye contact, smiles, and tone of voice. And they’ll turn to you in a mix of amusement and frustration and say, yes of course they love you, sweetie. You’re family.  \n  \nTechnically speaking, fonts are representations are letters, so it might seem like a language barrier is a bit of a deal breaker. But you see the font before you read the word, and as a result the font develops a way of being in the world entirely separate from its text. And just like a baby and a puppy, sometimes two fonts will find each other and know that although they’ll never talk, they’ll always understand each other. Like family.  \n  \nHere are some of those extra-lingual font pairings.`
+                    content: `Even for our most literate friends, the sped-read-every-Harry-Potter-the-day-it-came-out Bar Trivia All Stars, there is a universally inescapable gap between seeing and reading. These milliseconds are a font's playground. This is when it establishes its way of being in the world: a posture and gait that you'd recognize from across the street with your glasses off. A pitch and laugh that you could make out in a Chinese restaurant on Christmas.  \n  \nThis way of being is a font’s “timbre.”  \n  \nTimbre's immediacy is extralingual: while a font cannot <em>speak</em> every language, it can make itself understood <em>regardless</em> of language. To be clear, a font's timbre can only make <em>itself</em> understood. Not an arbitrary message - that would be speaking.\n  \nTypically that's a bit limiting. "Hi, I'm _______" is a name tag, not a conversation. But from time to time, fonts get to meet their foreign cousins: fonts with a inherited common timbre who, for one socioeconogeopoliticohistorico reason or another, ended up in a different language. This is when the sparks really fly.`
+                },
+                // {
+                //     type: 'text-separator',
+                //     content: null
+                // },
+                {
+                    type: 'image-double',
+                    content: [{
+                        url: '/kanji-kana-bline-@-centre-dart-montpellier-01-600x900-q92.jpeg',
+                        widthPercentage: 50.5
+                    }, {
+                        url: '/kanji-kana-bline-a-la-fenetre-catalogue-10-1600x1067-q95.jpeg',
+                        widthPercentage: 49.5
+                    }],
+                },
+                {
+                    type: 'body-text',
+                    content: `Above is a booklet for an <a href="http://www.baldingervuhuu.com/projets/kanji-kana-bline-a-la-fenetre-centre-dart-montpellier/client:centre-d-art-montpellier">exhibition</a> studying the connection of kanji, hiragana, katakana and Latin characters in Japanese writing.  \n  \nThese writing systems converge like families seeing each other at the hotel check-in before a wedding. While you can immediately tell the American cousins, the Chinese cousins, and the Japanese cousins apart, there's a clear family resemblance.  \n  \nTo the left, the cover's austere characters speak like middle-aged siblings catching each other up on their travels. Their timbre: thin strokes with hemispheric terminals, patient arcs, tidy corners, airy spacing.  \n  \nThe characters to the right are their neices and nephews. They run around whispering secrets, bouncing off walls. And while they may be shouting aparent nonsense they somehow do it in lockstep, rising and falling together as if pulled by the same string.`
+                },
+                {
+                    type: 'text-separator',
+                    content: null
                 },
                 {
                     type: 'image-double',
@@ -109,25 +260,18 @@ export const articles: Record<string, IArticle> = {
                         url: '/el-al-price-list-menu.webp',
                         widthPercentage: 50
                     }],
-                    caption: 'El-Al inflight menu, 1970. It takes a beat to even realize there\'s two langauges on the front.'
                 },
                 {
-                    type: 'image-double',
-                    content: [{
-                        url: '/kanji-kana-bline-@-centre-dart-montpellier-01-600x900-q92.jpeg',
-                        widthPercentage: 50.5
-                    }, {
-                        url: '/kanji-kana-bline-a-la-fenetre-catalogue-10-1600x1067-q95.jpeg',
-                        widthPercentage: 49.5
-                    }],
-                    caption: 'Booklet for an <a href="http://www.baldingervuhuu.com/projets/kanji-kana-bline-a-la-fenetre-centre-dart-montpellier/client:centre-d-art-montpellier">exhibition</a> studying the connection of kanji, hiragana, katakana and Latin in Japanese writing.'
-                },
+                    type: "body-text",
+                    content: "International font families often reflect their real geopolitics. Judaism is a historically diasporic religion, which makes Hebrew's survival all the more impressive. Its persistence has been thanks to its ability to assimilate into another culture without diluting its own. Take, for example, American Jewish literature, whose pages are typically split vertically like stone tablets: a Hebrew side and an English side.  \n  \nThis 1970s inflight menu from El Al, Israel's national airline, shares that bilingual symmetry. The brand's entire visual identity was designed from the start to be inclusive and graceful in its handling of Latin and Hebrew characters. The Hebrew and English letters mirror each other perflectly in both the layout of the overall text and the composition of each letter.  \n  \nBlur your eyes and ears and take in the menu and plane. Cut through the cigarette smoke and make out the accent found in Palm Beach, Haifa, Bensonhurst, and Munich. This is a melodic, heavy-throated voice millenia in the making."
+                }
+            ],
+            // ITC BUSORAMA
+            [
                 {
                     type: 'custom-html',
-                    content: '<video src="/boy-meets-world-brothers.mp4" controls>'
+                    content: '<br>'
                 },
-            ],
-            [
                 {
                     type: 'header-image',
                     content: {
@@ -136,15 +280,15 @@ export const articles: Record<string, IArticle> = {
                 },
                 {
                     type: 'body-text',
-                    content: `Daddy's mother's cousin had me in her grip at the Bat Mitzvah luncheon. “Of course you love to sing. You know, your Great Great Aunt Nellie was a song and dance girl in the 20's.” Her weathered palms were clasped over my hands, with barn-red lips pursed in a wry smile and watery eyes that were looking to mine for something I'm not yet poised enough to give.  \n  \nI am 5'3” and unaccustomed to looking down. The four inches that I had over Daddy's mother's cousin put me on a guilt-inducing pedestal upon which I want to curl up, apologize, and vanish. Through the fog of my banal anxiety I caught when she finished talking and, after a beat of self-gathering, agreed wholeheartedly, flashed a wide smile, and thanked her for her gift.`
+                    content: `Daddy's mother's cousin had me in her grip at the Bat Mitzvah luncheon. “Of course you love to sing. You know, your Great Great Aunt Nellie was a song and dance girl in the 20's.” Her weathered palms were clasped over my hands, with barn-red lips pursed in a wry smile and watery eyes that were looking to mine for something I'm not yet poised enough to give.  \n  \nI am 5'3” and unaccustomed to looking down. The four inches that I had over Daddy's mother's cousin put me on a guilt-inducing pedestal upon which I want to curl up, apologize, and vanish. Through the fog of my banal anxiety I caught when she finished talking. After a beat of self-gathering, I agreed wholeheartedly, flashed a wide smile, and thanked her for her gift.`
                 },
                 {
                     type: 'body-text',
-                    content: `She had given me a framed picture of Great Great Aunt Nellie on stage, a card with an elegant and indecipherable scrawl, and a check for $18.  \n  \nThe picture was magnificent. Nellie was on display yet in control, wearing nothing but a dress and a microphone. Her head was tilted back to the rafters, one leg bent and the other slopping forward. If she held her mic stand any close it would have been on the other side of her. Above her, a sign hung like a book cover's title: “Nellie Seagull and the Sapphic Saphartics.”  \n  \nThe font was the platonic ideal of a display font. It spoke with a voice so clear and self-assured that it dictated the entire show. It practically danced the words, with As and Ss that curled up and leaned back. The font was beautiful because it was confident. It stood out for architectural choices - a perfectly circular O, a bent T-bar, a swan's-neck S - that were as striking as they were simple. The font was, in other words, Nellie: on display and in control.`
+                    content: `She had given me a framed picture of Great Great Aunt Nellie on stage, a card with an elegant and indecipherable scrawl, and a check for $18.  \n  \nThe picture was magnificent. Nellie was on display yet in control, wearing nothing but a dress and a microphone. Her head was tilted back to the rafters, one leg bent and the other slopping forward. If she held her mic stand any closer it would have been on the other side of her. Above her, a sign hung like a book cover's title: “Nellie Seagull and the Sapphic Saphartics.”  \n  \nThe font was the platonic ideal of a display font. It spoke with a voice so clear and self-assured that it dictated the entire show. It practically danced the words, with As and Ss that curled up and leaned back. It was beautiful because it was confident. It stood out for architectural choices - a perfectly circular O, a bent T-bar, a swan's-neck S - that were as striking as they were simple.  \n  \nThe font was, in other words, Nellie: on display and in control.`
                 },
                 {
                     type: 'body-text',
-                    content: `There were 3 weeks left in the school year, so as a newly-minted Jewish woman I made the mature decision to focus my studies on doodles. I drew eyes and cubes and squiggles and shoes, but mostly I drew the words that came through my head. Made up words in Bubble letters, adult words in Declaration of Independence letters, the word “coniferous” ten times across my Environmental Science handout in log cabin letters.  \n  \nI saved the glamorous words for Nellie's font.`
+                    content: `There were 3 weeks left in the school year, so as a newly-minted Jewish woman I made the mature decision to focus my studies on doodling. I drew eyes and cubes, squiggles and shoes. But I mostly drew the words that came through my head. Made up words in bubble font, adult words in Declaration of Independence font, the word “coniferous” ten times across my Environmental Science handout in log cabin font.  \n  \nI saved the glamorous words for Nellie's font.`
                 },
             ]
         ]
