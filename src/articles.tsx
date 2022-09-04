@@ -93,7 +93,7 @@ export const articles: Record<string, IArticle> = {
     'family': {
         image: '/Family_Eurostile_01.jpeg',
         name: 'Family',
-        headerContent: `Fonts appear sui generis, but they are not. This issue will tag along with fonts as they head back home to their loving, inescapable families. As you scroll through their reunions, remember this: fonts are only different because they are the same.`,
+        headerContent: `Fonts appear to be sui generis orphans, creations of their own vision. They're not. This issue will tag along with fonts as they head back home to their loving, inescapable families.`,
         bodyContent: [
             // GALLERY
             [
@@ -184,6 +184,10 @@ export const articles: Record<string, IArticle> = {
                         widthPercentage: 41.25
                     }]
                 },
+                {
+                    type: 'playlist',
+                    content: '7HkwFKeOM2vwfrXm7LpAjW'
+                },
                 // SYNCRO
                 {
                     type: 'text-separator',
@@ -217,6 +221,10 @@ export const articles: Record<string, IArticle> = {
                         url: '/SignsSymbols_3.jpg'
                     }
                 },
+                {
+                    type: 'playlist',
+                    content: '2M9lvyULiNu4E2DjuuYrrE'
+                }
     
             ],
             // LANGUAGE BARRIERS
@@ -229,10 +237,6 @@ export const articles: Record<string, IArticle> = {
                     type: 'body-text',
                     content: `Even for our most literate friends, the sped-read-every-Harry-Potter-the-day-it-came-out Bar Trivia All Stars, there is a universally inescapable gap between seeing and reading. These milliseconds are a font's playground. This is when it establishes its way of being in the world: a posture and gait that you'd recognize from across the street with your glasses off. A pitch and laugh that you could make out in a Chinese restaurant on Christmas.  \n  \nThis way of being is a font’s “timbre.”  \n  \nTimbre's immediacy is extralingual: while a font cannot <em>speak</em> every language, it can make itself understood <em>regardless</em> of language. To be clear, a font's timbre can only make <em>itself</em> understood. Not an arbitrary message - that would be speaking.\n  \nTypically that's a bit limiting. "Hi, I'm _______" is a name tag, not a conversation. But from time to time, fonts get to meet their foreign cousins: fonts with a inherited common timbre who, for one socioeconogeopoliticohistorico reason or another, ended up in a different language. This is when the sparks really fly.`
                 },
-                // {
-                //     type: 'text-separator',
-                //     content: null
-                // },
                 {
                     type: 'image-double',
                     content: [{
@@ -246,6 +250,10 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: 'body-text',
                     content: `Above is a booklet for an <a href="http://www.baldingervuhuu.com/projets/kanji-kana-bline-a-la-fenetre-centre-dart-montpellier/client:centre-d-art-montpellier">exhibition</a> studying the connection of kanji, hiragana, katakana and Latin characters in Japanese writing.  \n  \nThese writing systems converge like families seeing each other at the hotel check-in before a wedding. While you can immediately tell the American cousins, the Chinese cousins, and the Japanese cousins apart, there's a clear family resemblance.  \n  \nTo the left, the cover's austere characters speak like middle-aged siblings catching each other up on their travels. Their timbre: thin strokes with hemispheric terminals, patient arcs, tidy corners, airy spacing.  \n  \nThe characters to the right are their neices and nephews. They run around whispering secrets, bouncing off walls. And while they may be shouting aparent nonsense they somehow do it in lockstep, rising and falling together as if pulled by the same string.`
+                },
+                {
+                    type: 'playlist',
+                    content: '5B2mdu3Iis4q6TN7HX5Jr8',
                 },
                 {
                     type: 'text-separator',
@@ -264,7 +272,11 @@ export const articles: Record<string, IArticle> = {
                 {
                     type: "body-text",
                     content: "International font families often reflect their real geopolitics. Judaism is a historically diasporic religion, which makes Hebrew's survival all the more impressive. Its persistence has been thanks to its ability to assimilate into another culture without diluting its own. Take, for example, American Jewish literature, whose pages are typically split vertically like stone tablets: a Hebrew side and an English side.  \n  \nThis 1970s inflight menu from El Al, Israel's national airline, shares that bilingual symmetry. The brand's entire visual identity was designed from the start to be inclusive and graceful in its handling of Latin and Hebrew characters. The Hebrew and English letters mirror each other perflectly in both the layout of the overall text and the composition of each letter.  \n  \nBlur your eyes and ears and take in the menu and plane. Cut through the cigarette smoke and make out the accent found in Palm Beach, Haifa, Bensonhurst, and Munich. This is a melodic, heavy-throated voice millenia in the making."
-                }
+                },
+                {
+                    type: 'playlist',
+                    content: '4wceVo7dQ61L912pMVRE8N',
+                },
             ],
             // ITC BUSORAMA
             [
@@ -290,6 +302,10 @@ export const articles: Record<string, IArticle> = {
                     type: 'body-text',
                     content: `There were 3 weeks left in the school year, so as a newly-minted Jewish woman I made the mature decision to focus my studies on doodling. I drew eyes and cubes, squiggles and shoes. But I mostly drew the words that came through my head. Made up words in bubble font, adult words in Declaration of Independence font, the word “coniferous” ten times across my Environmental Science handout in log cabin font.  \n  \nI saved the glamorous words for Nellie's font.`
                 },
+                {
+                    type: 'playlist',
+                    content: '6ST0Z79omVvgDZcOHua1mw'
+                }
             ]
         ]
     },
